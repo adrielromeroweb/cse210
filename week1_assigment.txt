@@ -1,0 +1,2 @@
+For this first week using github and learning a lot of new things I first write the code por the game. Then using commands in a terminal window and following the steps learned in the week I created a repository in github call cse210 where I am going to submit all the files, cloned it to my computer and added the tictactoe.py file. Then I did the same for this .txt file.
+It seems to be a more organized way to have the folders and file and useful for future projects. 
