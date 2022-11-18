@@ -1,0 +1,48 @@
+# TODO: Implement the Seeker class as follows...
+
+# 1) Add the class declaration. Use the following class comment.
+class Seeker:
+    """The person looking for the Hider. 
+    
+    The responsibility of a Seeker is to keep track of its location and distance travelled.
+    
+    Attributes:
+        location (int): The location of the Seeker (1-1000).
+    """
+
+# 2) Create the class constructor. Use the following method comment.
+    def __init__(self):
+        """Constructs a new Seeker.
+    
+        Args:
+            self (Seeker): An instance of Seeker.
+        """
+        self._location = 0
+
+# 3) Create the get_location(self) method. Use the following method comment.
+    def get_location(self):
+        """Gets the current location.
+        
+        Returns:
+            number: The current location,
+        """
+        location = self._location
+        return location
+
+# 4) Create the move_location(self, location) method. Use the following method comment.
+    def move_location(self, location):
+        """Moves to the given location.
+
+        Args:
+            self (Seeker): An instance of Seeker.
+            location (int): The given location.
+        """
+        self._location = location
+
+-----------------------------------------------
+
+What is encapsulation and why is it important?
+
+Encapsulation is the act of enclosing something. In programming we use encapsulation to hiding the details of something or in this case hiding the sources of change. This means that not everybody can change everything, just the allowed.
+For example in the Seeker game we have the Sekeer class with a _location attribute. This is encapsulated with an "_" prefix used in Python. It prevents others to change their value. It needs to be used the correct method that is the move_location method. That is the way determined by the program.
+So encapsulation will help protect coders from making breaking changes to the code.

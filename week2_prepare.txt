@@ -1,0 +1,54 @@
+Part One:
+
+import random
+
+
+# TODO: Implement the Die class as follows...
+
+# 1) Add the class declaration. Use the following class comment.
+class Die:
+    """A small cube with a different number of spots on each of its six sides.
+
+    The responsibility of Die is to keep track of the side facing up and calculate the points for 
+    it.
+   
+    Attributes:
+        value (int): The number of spots on the side facing up.
+        points (int): The number of points the die is worth.
+    """
+
+# 2) Create the class constructor. Use the following method comment.
+    def __init__(self):
+        """Constructs a new instance of Die with a value and points attribute.
+
+        Args:
+            self (Die): An instance of Die.
+        """
+        self.value = 0
+        self.points = 0
+
+# 3) Create the roll(self) method. Use the following method comment.
+    def roll(self):
+        """Generates a new random value and calculates the points.
+        
+        Args:
+            self (Die): An instance of Die.
+        """
+        self.value = random.randint(1, 6)
+
+        if self.value == 1:
+            self.points = 100
+        elif self.value == 5:
+            self.points = 50
+        else:
+            self.points = 0
+
+--------------------------------------------------------------------
+
+Part Two:
+
+What is abstraction and why is it important?
+
+In programming, abstraccion is the process of removing large and complex characteristics to only keep the essential. For example in our code we have a function call roll() that is a simple function to assign points to values. If we go deeper, this program really takes more complex code written in another languaje, but we use Python to simplify things. Abstraccion's advantage is that is easier to understand and faster.
+
+Programming with classes is a way of abstraccion to create instances of something. Through classes we have a template, like the Die() class in our program, to create instances of it with different values for every atribute. With the Die() class we obtain dice, to keep track of the side facing up and calculate the points for it. Also we have the Director() class that create the game wherever we want. Without this abstraccion in our code it will be harder to understand the program and it will take more code.
