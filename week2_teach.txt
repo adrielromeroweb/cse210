@@ -1,0 +1,5 @@
+First, I based the hilo program in the dice game.
+
+One of the first things was to think how to design the game and what things could be use as a class. I saw that the card could be a class. For this class I create the Card() class with the value attribute. The roll() method will generate a random number between 1 and 13 that will provide the value por the card. This class could be use anytime in the game and it is an advantage of the use of abstraccion.
+
+Also the program has a Director() class that contains the attributes of the program, card, nextcard, is_playing, answer and score. The process was divided the game in their aspect and in little functions. Make little task to create the greater one. The director generate a loop in the game to play it. The start_game() function will call every part of the game with a different function.
